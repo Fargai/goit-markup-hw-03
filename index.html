@@ -11,26 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./CSS/styless.css" />
   </head>
   <body>
     <!-- site header -->
-    <header>
+    <header class="header">
       <!-- navigation -->
-      <nav>
-        <!-- logo -->
-        <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Studio</a></li>
-          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-          <li><a href="" class="link">Contacts</a></li>
+      <div class="conteiner main-nav">
+        <nav class="main-nav">
+          <!-- logo -->
+          <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link">Studio</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <!-- contacts -->
+        <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
         </ul>
-      </nav>
-      <!-- contacts -->
-      <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- main content -->
     <main>
@@ -42,7 +50,7 @@
 
       <!-- list of features -->
       <section>
-        <h2>List of features</h2>
+        <h2 class="visually-hidden">List of features</h2>
         <ul class="feature list">
           <li>
             <h3 class="future-page">Strategy</h3>
