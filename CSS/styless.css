@@ -27,6 +27,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 } 
@@ -60,8 +64,10 @@ body {
 
 /* Marking Navigation */
 .header {
-    box-shadow: 0 1px 6px 0 #082E2F42,
-    0 1px 1px 0 #162E2F42, 0 2px 1px 0 #082E2F42
+    box-shadow: 
+    0 1px 6px 0 #082E2F42,
+    0 1px 1px 0 #162E2F42, 
+    0 2px 1px 0 #082E2F42
 }
 .main-nav {
     display: flex;
@@ -152,6 +158,16 @@ body {
 }
 
 /* Marking Features */
+.section-feature {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.feature {
+    display: flex;
+}
+.feature .item:not(:last-child) {
+    margin-right: 24px;
+}
 .future-page {
     color: var(--dark-color);
     font-weight: 500;
@@ -173,7 +189,12 @@ body {
 }
 
 /* Marking Wot We Do */
+.section-doing {
+    padding-bottom: 120px;
+}
 .section-page {
+    margin-bottom: 72px;
+
     color: var(--dark-color);
     font-weight: 500;
     font-size: 36px;
@@ -182,16 +203,57 @@ body {
     text-transform: capitalize;
 }
 
+.work {
+    display: flex;
+}
+
+.work .item:not(:last-child) {
+    margin-right: 24px;
+}
+
 /* Markinf Our Team */
+.team {
+    display: flex;
+}
+
+.team .item-foto:not(:last-child) {
+    margin-right: 24px;
+}
+
+.item-foto {
+    box-shadow:
+        0 2px 1px 0 #082E2F42,
+        0 1px 1px 0 #162E2F42;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--withe-color);
+}
+
+.our-team{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+    background-color: var(--light-color);
+}
+
 .team-page {
+    margin-top: 32px;
+    margin-bottom: 8px;
     color: var(--dark-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
+}
+.team-text {
+    margin-bottom: 32px;
+    text-align: center;
 }
 
 /* Marking Footer */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     color: var(--accent-color);
     background-color: var(--dark-color);
 }
@@ -199,7 +261,20 @@ body {
     color: var(--accent-color);
 }
 
+.footer-text {
+    width: 264px;
+    margin-top: 16px;
+}
+
 /* Marking Portfolio */
+.section-buttons {
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
 .button.secondary {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -224,6 +299,10 @@ body {
 .cards .link {
     text-decoration: none;
     color: inherit;
+}
+
+.buttons .item:not(:last-child) {
+    margin-right: 24px;
 }
 .card-page {
     font-weight: 500;
