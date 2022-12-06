@@ -47,8 +47,6 @@ img {
 /* Marking Logo */
 .logo {
     margin-right: 77px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 
     color: var(--dark-color);
     text-transform: uppercase;
@@ -66,10 +64,9 @@ img {
 
 /* Marking Navigation */
 .header {
-    box-shadow: 
-    0 1px 6px 0 #082E2F42,
-    0 1px 1px 0 #162E2F42, 
-    0 2px 1px 0 #082E2F42
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .main-nav {
     display: flex;
@@ -141,7 +138,8 @@ img {
 /* Marking Button */
 .button.primary {
     border-radius: 4px;
-    padding: 16px 32px;
+    width: 170px;
+    height: 51px;
 
     cursor: pointer;
     color: var(--withe-color);
@@ -171,10 +169,16 @@ img {
     margin-right: 24px;
 }
 .future-page {
+    margin-bottom: 8px;
+
     color: var(--dark-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
+
+.feature-text {
+    width: 264px;
 }
 
 .visually-hidden {
@@ -223,9 +227,9 @@ img {
 }
 
 .item-foto {
-    box-shadow:
-        0 2px 1px 0 #082E2F42,
-        0 1px 1px 0 #162E2F42;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--withe-color);
 }
@@ -237,8 +241,11 @@ img {
     background-color: var(--light-color);
 }
 
+.team-content {
+    padding: 32px 16px;
+}
+
 .team-page {
-    margin-top: 32px;
     margin-bottom: 8px;
     color: var(--dark-color);
     font-weight: 500;
@@ -247,7 +254,6 @@ img {
     text-align: center;
 }
 .team-text {
-    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -270,14 +276,15 @@ img {
 
 /* MARKING PORTFOLIO */
 
-/* Marking Buttons */
-.section-buttons {
+.section-main {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
+
 .buttons {
     display: flex;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .buttons .item:not(:last-child) {
@@ -307,9 +314,9 @@ img {
 }
 
 /* Marking  Cards*/
-.section-cards {
+/* .section-cards {
     padding-bottom: 120px;
-}
+} */
 
 .cards {
     display: flex;
